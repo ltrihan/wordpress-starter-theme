@@ -27,6 +27,9 @@ function ltrihan_register_assets() {
             if (!empty($assets['js'])) {
                 wp_enqueue_script($page, get_template_directory_uri() . '/dist/js/' . $assets['js'], array(), $the_theme->get('Version'));
             }
+        } else {
+            wp_enqueue_style('default', get_template_directory_uri() . '/dist/css/default.css', array(), $the_theme->get('Version'));
+            wp_enqueue_script('default', get_template_directory_uri() . '/dist/js/default.js', array(), $the_theme->get('Version'));
         }
     }
 }

@@ -4,6 +4,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     mode: "production",
     entry: {
+        main: [
+            "./assets/js/pages/default.js",
+            "./assets/scss/pages/default.scss",
+        ],
         home: [
             "./assets/js/pages/home.js",
             "./assets/scss/pages/home.scss",
