@@ -1,5 +1,19 @@
-# Log files
+# Ignore log, theme-specific cache and temporary files
 *.log
+*.pot
+*.mo
+*.po
+*.potx
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore any environment-specific files
+.env
+
+# Ignore miscellaneous files
+Thumbs.db
+.DS_Store
 
 # htaccess
 /.htaccess
