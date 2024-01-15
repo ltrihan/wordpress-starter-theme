@@ -1,0 +1,11 @@
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore node_modules
+node_modules/
