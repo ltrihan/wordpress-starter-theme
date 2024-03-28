@@ -1,10 +1,8 @@
 <?php
+defined('ABSPATH') or die('Something went wrong.');
 
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly.
-}
-
-function ltrihan_register_assets() {
+function ltrihan_register_assets()
+{
     $the_theme = wp_get_theme();
 
     $page_assets = array(
@@ -18,7 +16,7 @@ function ltrihan_register_assets() {
         ),
         // Add more pages here
     );
-    
+
     foreach ($page_assets as $page => $assets) {
         if (is_page($page)) {
             if (!empty($assets['css'])) {
